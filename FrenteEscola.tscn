@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://biqlsb7fcybxk"]
+
+[ext_resource type="Texture2D" uid="uid://bbepcsawy0oq2" path="res://Imagem/ChatGPT Image 22 de jun. de 2025, 21_16_33.png" id="1_il0jf"]
+[ext_resource type="Script" uid="uid://cnhv2rd4eynak" path="res://Player.gd" id="2_xcnf8"]
+[ext_resource type="Texture2D" uid="uid://ldqp1l7goewm" path="res://Imagem/image6.png" id="3_elco7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rb0lp"]
+size = Vector2(96, 127)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="ChatGptImage22DeJun_De2025,211633" type="Sprite2D" parent="."]
+position = Vector2(282, 106)
+texture = ExtResource("1_il0jf")
+
+[node name="Player" type="CharacterBody2D" parent="ChatGptImage22DeJun_De2025,211633"]
+position = Vector2(11, 190)
+script = ExtResource("2_xcnf8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChatGptImage22DeJun_De2025,211633/Player"]
+position = Vector2(198, -0.999989)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_rb0lp")
+
+[node name="Personagem2D" type="Sprite2D" parent="ChatGptImage22DeJun_De2025,211633/Player"]
+position = Vector2(191, -25)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_elco7")
+
+[node name="Camera2D" type="Camera2D" parent="ChatGptImage22DeJun_De2025,211633/Player"]
+position = Vector2(183, -29)
+scale = Vector2(1, 1)
+ignore_rotation = false
+enabled = false

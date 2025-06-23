@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://uk2aikjwntao"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+custom_minimum_size = Vector2(1, 1)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Hoje é o seu primeiro dia na escola nova.  
+Você acorda cedo, com um frio na barriga e um fio de esperança de que as coisas vão ser diferentes aqui.
+Sua mãe te deseja boa sorte antes de sair correndo pro trabalho. Você pega a mochila e respira fundo."
+clip_text = true
+uppercase = true
+tab_stops = PackedFloat32Array(0, 0)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
